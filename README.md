@@ -1,6 +1,20 @@
 or-vimrc
 ========
 
+How to Install
+--------
+
+ * Download or-vimrc, git clone http://github.com/openroc/or-vimrc 
+
+ * Backup your old stuffs and Link vim to .vim and vimrc to .vimrc
+
+ * In Vim console, input :BundleInstall, and waiting the installation of the bundle plugins
+
+ * Done and enjoy it. :)
+
+Plugin List
+--------
+
 ####Bundles Shortkey and Functions
 
             TagBar : ,t         : Show tag list

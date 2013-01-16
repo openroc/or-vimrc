@@ -73,8 +73,13 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle 'groenewege/vim-less'
 "Bundle 'wavded/vim-stylus'
 
-" markup language
+" markdown
 Bundle 'tpope/vim-markdown'
+"Bundle 'unibr/kramdown'
+"Bundle 'nelstrom/vim-markdown-preview'
+"Bundle 'rubygems/rubygems'
+Bundle 'greyblake/vim-preview'
+
 
 " Ruby
 "Bundle 'tpope/vim-endwise'

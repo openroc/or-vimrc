@@ -3,7 +3,6 @@
 " Sources
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 so ~/.vim/bundles.vim
-so ~/.vim/functions.vim
 so ~/.vim/config.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -107,6 +106,7 @@ nmap <leader>fd :se ff=dos<cr>
 nmap <leader>fu :se ff=unix<cr>
 
 " Fast switch tab
+map <leader>to :tabnew 
 map <leader>tw :tabnew %<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tn :tabnext<cr>
@@ -154,10 +154,6 @@ nmap <leader>e :NERDTreeToggle<cr>
 nnoremap <leader>a :Ack
 nnoremap <esc><esc> :GundoToggle<cr>
 
-" Fast visual search. #Depend on function.vim
-vnoremap <silent> * :call VisualSearch('f')<cr>
-vnoremap <silent> # :call VisualSearch('b')<cr>
-
 " Fast search
 "map <space> /
 "map <c-space> ?
@@ -169,6 +165,7 @@ map <c-h> <c-w>h
 map <c-l> <c-w>l
 
 " Fast switch buffers
+map <c-up>    :BufExplorer<CR>
 map <c-left>  :bp<cr>
 map <c-right> :bn<cr>
 map <c-down>  :bd<cr>
@@ -179,7 +176,6 @@ nmap <c-F8> 0i<F3><c-r>+<esc><F3>
 
 " Fast remove indenting on empty lines
 map <F2> :%s/\s*$//g<cr>:noh<cr>''
-
 
 " Fast input
 iab xme <c-r>="Author: Roc  Mail: openroc@gmail.com"<cr>
@@ -192,7 +188,6 @@ au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 au FileType python setlocal omnifunc=pythoncomplete#Complete
 au FileType c setlocal omnifunc=ccomplete#Complete
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python Settings 
@@ -208,7 +203,6 @@ au FileType python let python_highlight_space_errors = 1
 au FileType python let python_highlight_doctests = 1
 
 au FileType python so ~/.vim/syntax/python.vim
-
 au FileType python so ~/.vim/plugin/python_fold.vim
 au FileType python so ~/.vim/plugin/python_fn.vim
 
