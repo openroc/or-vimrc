@@ -4,9 +4,11 @@ or-vimrc
 How to Install
 --------
 
- * Download or-vimrc, git clone http://github.com/openroc/or-vimrc 
+ * Download or-vimrc
+ 
+         git clone http://github.com/openroc/or-vimrc 
 
- * Backup your old stuffs and Link vim to .vim and vimrc to .vimrc
+ * Backup your old stuffs, Link vim to .vim and vimrc to .vimrc, then create a dir named "bundle" in .vim
 
  * In Vim console, input :BundleInstall, and waiting the installation of the bundle plugins
 
