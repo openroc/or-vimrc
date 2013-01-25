@@ -27,6 +27,13 @@ else
     color desert
 endif
 
+" Enable omni completion.
+au FileType css setlocal omnifunc=csscomplete#CompleteCSS
+au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+au FileType python setlocal omnifunc=pythoncomplete#Complete
+au FileType c setlocal omnifunc=ccomplete#Complete
+
 " Set Omni menu colors
 hi Pmenu guibg=#333333
 hi PmenuSel guibg=#555555 guifg=#ffffff
@@ -152,7 +159,7 @@ nnoremap <leader>v V`]
 nmap <leader>t :TagbarToggle<cr>
 nmap <leader>e :NERDTreeToggle<cr>
 nnoremap <leader>a :Ack
-nnoremap <esc><esc> :GundoToggle<cr>
+nnoremap <leader>u :GundoToggle<cr>
 
 " Fast search
 "map <space> /
@@ -163,6 +170,9 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
+
+" Fast to close window
+nnoremap <esc><esc> <c-w>q
 
 " Fast switch buffers
 map <c-up>    :BufExplorer<CR>
@@ -175,23 +185,18 @@ vmap <c-F7> "+y<cr>
 nmap <c-F8> 0i<F3><c-r>+<esc><F3>
 
 " Fast remove indenting on empty lines
-map <F2> :%s/\s*$//g<cr>:noh<cr>''
+map <c-F2> :%s/\s*$//g<cr>:noh<cr>''
 
 " Fast input
-iab xme <c-r>="Author: Roc  Mail: openroc@gmail.com"<cr>
-iab xdate <c-r>=strftime("%d/%m/%y")
-iab xtime <c-r>=strftime("%H:%M:%S")
-
-" Enable omni completion.
-au FileType css setlocal omnifunc=csscomplete#CompleteCSS
-au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-au FileType python setlocal omnifunc=pythoncomplete#Complete
-au FileType c setlocal omnifunc=ccomplete#Complete
+iab date <c-r>=strftime("%d/%m/%y")
+iab time <c-r>=strftime("%H:%M:%S")
+iab datetime <c-r>=strftime("%H:%M:%S %d/%m/%y")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python Settings 
+" Special Settings for different file type
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Python 
 au FileType python let python_highlight_all = 1
 au FileType python let python_highlight_builtins = 1
 au FileType python let python_highlight_exceptions = 1
@@ -206,10 +211,35 @@ au FileType python so ~/.vim/syntax/python.vim
 au FileType python so ~/.vim/plugin/python_fold.vim
 au FileType python so ~/.vim/plugin/python_fn.vim
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Jquery Settings 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Javascript & JQuery 
 au Syntax javascript set syntax=jquery
+
+" C/C++ 
+"
+" Java 
+"
+" PHP 
+"
+" HTML & XML 
+"
+" Perl 
+"
+" Ruby 
+"
+" Shell 
+"
+" JSON 
+"
+"
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Personal Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Fast input
+iab me <c-r>="Author:  Mail:  "<cr>
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
