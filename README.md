@@ -24,14 +24,16 @@ How to Install
 Plugin List
 --------
 
-####Bundles Shortkey and Functions
+####Bundles Shortkey
 
+       Bundle Name : ShortKey   : Description
+    ---------------:------------:-----------------------------------------------   
             TagBar : ,t         : Show tag list
           NerdTree : ,e         : Show file explore window
             TabBar :            : Mini Top Buffer List
                Ack : ,a         : Find sub string in current dir
              Ctrlp : <ctrl>+p   : Find file in current dir
-             GUndo : <esc><esc> : Show Undo Tree
+             GUndo : <ctrl>+u   : Show Undo Tree
      NeoComplCache :            : Auto completion
      NerdCommenter :            : Add/Remove comment
           SuperTab :            : SuperTab
@@ -45,6 +47,8 @@ Plugin List
 
 ####Other plugin
 
+       Plugin Name : ShortKey   : Description
+    ---------------:------------:-----------------------------------------------   
              VimIM :            : Input chinese via cloud input method
                VSC :            : CVS/SVN/GIT
          CscopeMap :            : Add key-mapping for cscope
