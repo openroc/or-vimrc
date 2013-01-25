@@ -156,10 +156,11 @@ noremap <leader>m mmHmt:%s/<c-v><cr>//ge<cr>'tzt'm
 nnoremap <leader>v V`]
 
 " Fast trigger plug-in
-nmap <leader>t :TagbarToggle<cr>
-nmap <leader>e :NERDTreeToggle<cr>
+nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>e :NERDTreeToggle<cr>
 nnoremap <leader>a :Ack
-nnoremap <leader>u :GundoToggle<cr>
+nnoremap <c-u> :GundoToggle<cr>
+nnoremap <c-p> :CtrlP<cr>
 
 " Fast search
 "map <space> /
