@@ -30,7 +30,6 @@ Plugin List
     ---------------:------------:-----------------------------------------------   
             TagBar : ,t         : Show tag list
           NerdTree : ,e         : Show file explore window
-            TabBar :            : Mini Top Buffer List
                Ack : ,a         : Find sub string in current dir
              Ctrlp : <ctrl>+p   : Find file in current dir
              GUndo : <ctrl>+u   : Show Undo Tree
@@ -38,6 +37,7 @@ Plugin List
      NerdCommenter :            : Add/Remove comment
           SuperTab :            : SuperTab
          Syntastic :            : Static program check
+            TabBar :            : Mini Top Buffer List
            Tabular :            : Make text to tab format
           SnipMate :            : Auto extend a keyword to some pre-define format
           Fugitive :            : Git
