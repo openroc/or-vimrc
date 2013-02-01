@@ -215,6 +215,8 @@ au FileType python so ~/.vim/plugin/python_fn.vim
 " Javascript & JQuery 
 au Syntax javascript set syntax=jquery
 
+" Go
+
 " C/C++ 
 "
 " Java 

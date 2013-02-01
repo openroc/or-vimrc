@@ -80,6 +80,8 @@ Bundle 'tpope/vim-markdown'
 "Bundle 'rubygems/rubygems'
 Bundle 'greyblake/vim-preview'
 
+" Golang
+Bundle 'jnwhiteh/vim-golang'
 
 " Ruby
 "Bundle 'tpope/vim-endwise'
