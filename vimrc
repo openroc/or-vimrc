@@ -162,6 +162,8 @@ nnoremap <leader>a :Ack
 nnoremap <c-u> :GundoToggle<cr>
 nnoremap <c-p> :CtrlP<cr>
 
+" Fash run shell
+map <leader><space> :!
 " Fast search
 "map <space> /
 "map <c-space> ?
@@ -189,9 +191,9 @@ nmap <c-F8> 0i<F3><c-r>+<esc><F3>
 map <c-F2> :%s/\s*$//g<cr>:noh<cr>''
 
 " Fast input
-iab date <c-r>=strftime("%d/%m/%y")
-iab time <c-r>=strftime("%H:%M:%S")
-iab datetime <c-r>=strftime("%H:%M:%S %d/%m/%y")
+iab _date <c-r>=strftime("%d/%m/%y")
+iab _time <c-r>=strftime("%H:%M:%S")
+iab _datetime <c-r>=strftime("%H:%M:%S %d/%m/%y")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Special Settings for different file type
@@ -214,6 +216,9 @@ au FileType python so ~/.vim/plugin/python_fn.vim
 
 " Javascript & JQuery 
 au Syntax javascript set syntax=jquery
+
+" Configuration File
+au! BufRead,BufNewFile *.conf setfiletype cfg
 
 " Go
 
