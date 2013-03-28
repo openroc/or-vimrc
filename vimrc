@@ -1,9 +1,8 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sources
+" Bundle Sources
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 so ~/.vim/bundles.vim
-so ~/.vim/config.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -22,7 +21,8 @@ syntax on
 
 " Set default color scheme
 if has("gui_running")
-    color distinguished
+    set gfn=WenQuanYi\ Micro\ Hei\ Mono\ 10
+    color monokai
 else
     color desert
 endif
@@ -188,18 +188,27 @@ vmap <c-F7> "+y<cr>
 nmap <c-F8> 0i<F3><c-r>+<esc><F3>
 
 " Fast remove indenting on empty lines
-map <c-F2> :%s/\s*$//g<cr>:noh<cr>''
+map <F2> :%s/\s*$//g<cr>:noh<cr>''
+
+" FIXME  work around the conflicts under tmux
+map <F5>  :BufExplorer<CR>
+map <<    :bp<cr>
+map >>    :bn<cr>
+
+vmap <F7> "+y<cr>
+nmap <F8> 0i<F3><c-r>+<esc><F3>
+
 
 " Fast input
 iab _date <c-r>=strftime("%d/%m/%y")
 iab _time <c-r>=strftime("%H:%M:%S")
-iab _datetime <c-r>=strftime("%H:%M:%S %d/%m/%y")
+iab _now  <c-r>=strftime("%H:%M:%S %d/%m/%y")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Special Settings for different file type
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Python 
+" Python
 au FileType python let python_highlight_all = 1
 au FileType python let python_highlight_builtins = 1
 au FileType python let python_highlight_exceptions = 1
@@ -214,29 +223,31 @@ au FileType python so ~/.vim/syntax/python.vim
 au FileType python so ~/.vim/plugin/python_fold.vim
 au FileType python so ~/.vim/plugin/python_fn.vim
 
-" Javascript & JQuery 
+" Javascript & JQuery
+au FileType javascript set shiftwidth=2
 au Syntax javascript set syntax=jquery
 
 " Configuration File
-au! BufRead,BufNewFile *.conf setfiletype cfg
+" au! BufRead,BufNewFile *.conf setfiletype cfg
 
 " Go
 
-" C/C++ 
+" C/C++
 "
-" Java 
+" Java
 "
-" PHP 
+" PHP
 "
-" HTML & XML 
+" HTML & XML
+au FileType html,xml set shiftwidth=2
+
+" Perl
 "
-" Perl 
+" Ruby
 "
-" Ruby 
+" Shell
 "
-" Shell 
-"
-" JSON 
+" JSON
 "
 "
 
@@ -248,7 +259,10 @@ au! BufRead,BufNewFile *.conf setfiletype cfg
 " Fast input
 iab me <c-r>="Author:  Mail:  "<cr>
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Loading configurations for bundle plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+so ~/.vim/config.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TODO
