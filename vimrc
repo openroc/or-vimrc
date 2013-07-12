@@ -113,7 +113,7 @@ nmap <leader>fd :se ff=dos<cr>
 nmap <leader>fu :se ff=unix<cr>
 
 " Fast switch tab
-map <leader>to :tabnew 
+map <leader>to :tabnew
 map <leader>tw :tabnew %<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tn :tabnext<cr>
@@ -144,6 +144,7 @@ map <leader>g gg=G
 map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
+map <leader>sd zw
 map <leader>s? z=
 
 " Fast remove highlight

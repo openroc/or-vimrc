@@ -117,12 +117,12 @@ let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
 " SnipMate
-"let g:snips_trigger_key='<tab>'
+let g:snips_trigger_key='<s-tab>'
 
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|.cvs$'
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive',

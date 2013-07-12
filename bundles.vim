@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
 Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
 Bundle 'honza/snipmate-snippets'
@@ -54,6 +55,8 @@ Bundle 'scrooloose/syntastic'
 " ------------
 Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
+
+Bundle 'terryma/vim-multiple-cursors' 
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
