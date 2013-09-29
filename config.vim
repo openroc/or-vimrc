@@ -117,7 +117,7 @@ let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
 " SnipMate
-let g:snips_trigger_key='<s-tab>'
+"let g:snips_trigger_key='<s-tab>'
 
 
 " ctrlp

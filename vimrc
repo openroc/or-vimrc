@@ -176,7 +176,7 @@ map <c-h> <c-w>h
 map <c-l> <c-w>l
 
 " Fast to close window
-nnoremap <esc><esc> <c-w>q
+"map <c-q> <c-w>q
 
 " Fast switch buffers
 map <c-up>    :BufExplorer<CR>
@@ -240,6 +240,7 @@ au Syntax javascript set syntax=jquery
 " PHP
 "
 " HTML & XML
+au FileType html set ft=htmldjango
 au FileType html,xml set shiftwidth=2
 
 " Perl
@@ -256,9 +257,8 @@ au FileType html,xml set shiftwidth=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Personal Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Fast input
-iab me <c-r>="Author:  Mail:  "<cr>
+so ~/.vim/plugin/myfastinput.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Loading configurations for bundle plugins
