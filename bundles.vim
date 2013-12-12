@@ -13,10 +13,10 @@ Bundle 'gmarik/vundle'
 "------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
-Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
-Bundle 'honza/snipmate-snippets'
 Bundle 'mattn/zencoding-vim'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'honza/snipmate-snippets'
 " snipmate dependencies
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -53,7 +53,7 @@ Bundle 'scrooloose/syntastic'
 "-------------
 " Other Utils
 " ------------
-Bundle 'humiaozuzu/fcitx-status'
+"Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 Bundle 'terryma/vim-multiple-cursors' 
@@ -62,7 +62,7 @@ Bundle 'terryma/vim-multiple-cursors'
 " Syntax/Indent for language enhancement
 "----------------------------------------
 " web backend
-Bundle '2072/PHP-Indenting-for-VIm'
+"Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
 Bundle 'beyondwords/vim-jinja2'
 "Bundle 'digitaltoad/vim-jade'
@@ -90,7 +90,7 @@ Bundle 'jnwhiteh/vim-golang'
 "Bundle 'tpope/vim-endwise'
 
 " Scheme
-Bundle 'kien/rainbow_parentheses.vim'
+"Bundle 'kien/rainbow_parentheses.vim'
 "Bundle 'wlangstroth/vim-racket'
 
 "--------------
