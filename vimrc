@@ -156,6 +156,15 @@ noremap <leader>m mmHmt:%s/<c-v><cr>//ge<cr>'tzt'm
 " Fast select content from current line to bottom
 nnoremap <leader>v V`]
 
+" Fast move line up and down, like sublime text
+imap <c-up> <esc>ddkPi
+imap <c-down> <esc>ddpi
+
+imap <leader>b0 <esc>v0di
+imap <leader>b$ <esc>v$di
+
+imap <leader>b <esc>xi
+
 " Fast trigger plug-in
 nnoremap <leader>t :TagbarToggle<cr>
 nnoremap <leader>e :NERDTreeToggle<cr>
@@ -193,8 +202,8 @@ map <F2> :%s/\s*$//g<cr>:noh<cr>''
 
 " FIXME  work around the conflicts under tmux
 map <F5>  :BufExplorer<CR>
-map <<    :bp<cr>
-map >>    :bn<cr>
+"map <<    :bp<cr>
+"map >>    :bn<cr>
 
 vmap <F7> "+y<cr>
 nmap <F8> 0i<F3><c-r>+<esc><F3>
