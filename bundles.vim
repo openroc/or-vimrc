@@ -46,7 +46,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 
@@ -57,6 +56,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'nvie/vim-togglemouse'
 
 Bundle 'terryma/vim-multiple-cursors' 
+
+Bundle 'myusuf3/numbers'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
@@ -76,12 +77,16 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle 'groenewege/vim-less'
 "Bundle 'wavded/vim-stylus'
 
+" git
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+
 " markdown
 Bundle 'tpope/vim-markdown'
 "Bundle 'unibr/kramdown'
 "Bundle 'nelstrom/vim-markdown-preview'
 "Bundle 'rubygems/rubygems'
-Bundle 'greyblake/vim-preview'
+"Bundle 'greyblake/vim-preview'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
@@ -89,8 +94,11 @@ Bundle 'jnwhiteh/vim-golang'
 " Ruby
 "Bundle 'tpope/vim-endwise'
 
+" Angularjs
+Bundle "burnettk/vim-angular"
+
 " Scheme
-"Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kien/rainbow_parentheses.vim'
 "Bundle 'wlangstroth/vim-racket'
 
 "--------------

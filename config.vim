@@ -119,10 +119,18 @@ let g:SuperTabRetainCompletionType=2
 " SnipMate
 "let g:snips_trigger_key='<s-tab>'
 
+" ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store,*.o,*.meta,*.dll  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|.cvs$'
+
+"let g:ctrlp_custom_ignore = {
+"    'dir':  '\v[\/]>(git|hg|svn|cvs)$',
+"    'file': '\v>(exe|so|dll)$',
+"}
+
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive',
